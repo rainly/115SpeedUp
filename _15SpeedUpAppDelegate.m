@@ -102,11 +102,11 @@
 	[self.a115urlText resignFirstResponder];
 	[self.a115urlText setEnabled:NO];
 	[self.a115urlText setEditable:NO];
-	[self changeToCancelBtn:btn];
+
 	[self disableAllDownload:nil];
 	NSButton * btn = (NSButton *)sender;
 	[btn setEnabled:YES];
-
+	[self changeToCancelBtn:btn];
 	switch (btn.tag) {
 		case 1:
 		{
