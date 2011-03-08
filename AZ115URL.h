@@ -22,4 +22,6 @@
 @property (nonatomic, copy) NSString *chinaTelecomString;
 @property (nonatomic, copy) NSString *backupString;
 
+#pragma mark methods
+- (void)getURLsFrom115ApiWithURL:(NSString*)aurl;
 @end

@@ -11,6 +11,8 @@
 		256AC3DA0F4B6AC300CF3369 /* _15SpeedUpAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* _15SpeedUpAppDelegate.m */; };
 		838C772C1324A31F00BA304A /* AZWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 838C772B1324A31F00BA304A /* AZWindow.m */; };
 		838C77441324B19300BA304A /* AZ115URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 838C77431324B19300BA304A /* AZ115URL.m */; };
+		838C78511324B51200BA304A /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838C78501324B51200BA304A /* JSON.framework */; };
+		838C78C81324D9EE00BA304A /* axel in Resources */ = {isa = PBXBuildFile; fileRef = 838C78C71324D9EE00BA304A /* axel */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -31,6 +33,8 @@
 		838C772B1324A31F00BA304A /* AZWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZWindow.m; sourceTree = "<group>"; };
 		838C77421324B19300BA304A /* AZ115URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZ115URL.h; sourceTree = "<group>"; };
 		838C77431324B19300BA304A /* AZ115URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZ115URL.m; sourceTree = "<group>"; };
+		838C78501324B51200BA304A /* JSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSON.framework; path = Library/Frameworks/JSON.framework; sourceTree = SDKROOT; };
+		838C78C71324D9EE00BA304A /* axel */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = axel; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* _15SpeedUp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "_15SpeedUp-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* 115SpeedUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 115SpeedUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -41,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				838C78511324B51200BA304A /* JSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				838C78501324B51200BA304A /* JSON.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -109,6 +115,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				838C78C71324D9EE00BA304A /* axel */,
 				8D1107310486CEB800E47090 /* _15SpeedUp-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -186,6 +193,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				838C78C81324D9EE00BA304A /* axel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
