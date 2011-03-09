@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "AZ115URL.h"
+@class AZDownloadManager;
 @interface _15SpeedUpAppDelegate : NSObject <NSApplicationDelegate,NSTextFieldDelegate> {
     NSWindow *window;
 	NSTextField * a115urlText;
@@ -22,8 +23,14 @@
 	NSLevelIndicator * progressIndicator;
 	
 	NSInteger progress;
+	
+	AZDownloadManager * downloader;
+	
+	NSMutableArray * taskArray;
 }
 
+@property (nonatomic, retain) NSMutableArray *taskArray;
+@property (nonatomic, retain) AZDownloadManager *downloader;
 @property (nonatomic, retain) IBOutlet NSButton *downloadBtn;
 @property (nonatomic, assign) IBOutlet NSInteger progress;
 @property (nonatomic, retain) IBOutlet NSLevelIndicator *progressIndicator;

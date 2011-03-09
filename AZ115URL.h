@@ -15,8 +15,11 @@
 	NSString * chinaUnicomString;
 	NSString * chinaTelecomString;
 	NSString * backupString;
+	
+	NSString * fileNameString;
 }
 
+@property (nonatomic, copy) NSString *fileNameString;
 @property (nonatomic, copy) NSString *a115URLString;
 @property (nonatomic, copy) NSString *chinaUnicomString;
 @property (nonatomic, copy) NSString *chinaTelecomString;

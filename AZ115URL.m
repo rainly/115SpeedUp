@@ -7,10 +7,11 @@
 //
 
 #import "AZ115URL.h"
-#import <JSON/JSON.h>
+#import "JSON.h"
 
 @implementation AZ115URL
 
+@synthesize fileNameString;
 @synthesize a115URLString;
 @synthesize chinaUnicomString;
 @synthesize chinaTelecomString;
@@ -26,6 +27,7 @@
 	self.chinaUnicomString = [[downloadUrls objectAtIndex:0] objectForKey:@"Url"];
 	self.chinaTelecomString =[[downloadUrls objectAtIndex:1] objectForKey:@"Url"]; 
 	self.backupString = [[downloadUrls objectAtIndex:2] objectForKey:@"Url"];
+	self.fileNameString = [retDict objectForKey:@"FileName"];
 	NSLog(@"%@",retDict);
 }
 - (void)dealloc
@@ -38,6 +40,9 @@
 	chinaTelecomString = nil;
 	[backupString release];
 	backupString = nil;
+
+	[fileNameString release];
+	fileNameString = nil;
 
 	[super dealloc];
 }
